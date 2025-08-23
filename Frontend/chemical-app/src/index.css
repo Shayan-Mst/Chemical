@@ -6,8 +6,13 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  --page-bg: #ffffff;
+  --bg-primary: #111827;
+  --bg-secondary: #f9fafb;
+  --bg-svg : #cccfd4;
+  --text-primary: #ffffff;
+  --text-secondary: #111827;
+  background-color: var(--page-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
