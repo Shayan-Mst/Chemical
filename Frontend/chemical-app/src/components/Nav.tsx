@@ -7,7 +7,7 @@ import {useState} from "react"
 const Nav = () => {
     const [query, setQuery] = useState("");
   return (
-     <nav className="text-[var(--text-secondary)] w-full px-6 py-4 sticky top-0  flex items-center justify-between">
+     <nav className="text-[var(--text-secondary)] w-full  sticky top-0  flex items-center justify-between">
       {/* Logo */}
      
 
