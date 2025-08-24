@@ -1,5 +1,6 @@
 import Introduce from "../components/Introduce"
 import Nav from "../components/Nav"
+import ProductRange from "../components/ProductRange"
 import TopBar from "../components/TopBar"
 import WhyUs from "../components/WhyUs"
 
@@ -11,6 +12,7 @@ const Home = () => {
     <Nav/>
     <Introduce/>
     <WhyUs/>
+    <ProductRange/>
     </>
    
   )
