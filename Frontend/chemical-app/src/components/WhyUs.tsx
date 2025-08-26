@@ -5,7 +5,7 @@ const WhyUs = () => {
    <section id="features" className="py-20 bg-white">
     <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold text-gray-900 mb-4">چرا تندیس شیمی را انتخاب کنیم؟</h3>
+            <h3 className="text-4xl font-bold text-gray-900 mb-4">چرا <span className='text-[var(--bg-third)]'>تندیس شیمی</span> را انتخاب کنیم؟</h3>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div id="feature-quality" className="text-center p-8 rounded-xl bg-gray-50 hover:bg-blue-50 transition-colors">
