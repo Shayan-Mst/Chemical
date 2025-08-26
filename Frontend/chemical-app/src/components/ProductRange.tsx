@@ -9,7 +9,7 @@ const ProductRange = () => {
    <section id="products" className="py-20 bg-gray-50">
     <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold text-gray-900 mb-4">دامنه محصولات ما</h3>
+            <h3 className="text-4xl font-bold text-gray-900 mb-4">دامنه <span className='text-[var(--bg-third)]'>محصولات</span> ما</h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">انتخابی جامع از مواد شیمیایی صنعتی برای تمامی صنایع و کاربردها</p>
         </div>
         
@@ -35,7 +35,31 @@ const ProductRange = () => {
                             نیتریک اسید (HNO₃)
                         </div>
                     </div>
-                    <Button variant='blue' size='full'>درخواست سفارش</Button>
+                    <Button variant='blue' size='full'>درخواست سفارش
+
+                         <svg  className="mr-2 w-5 h-5 transition-all duration-300 group-hover:-translate-x-3 group-hover:opacity-0"
+   xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+
+<title/>
+
+<g id="Complete">
+
+<g id="arrow-left">
+
+<g>
+
+<polyline data-name="Right" fill="none" id="Right-2" points="7.6 7 2.5 12 7.6 17" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+
+<line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21.5" x2="4.8" y1="12" y2="12"/>
+
+</g>
+
+</g>
+
+</g>
+
+</svg>
+                    </Button>
                 </div>
             </div>
 
@@ -60,7 +84,30 @@ const ProductRange = () => {
                             حلال های صنعتی
                         </div>
                     </div>
-                    <Button variant='blue' size='full'>درخواست سفارش</Button>
+                    <Button variant='blue' size='full'>درخواست سفارش
+                          <svg  className="mr-2 w-5 h-5 transition-all duration-300 group-hover:-translate-x-3 group-hover:opacity-0"
+   xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+
+<title/>
+
+<g id="Complete">
+
+<g id="arrow-left">
+
+<g>
+
+<polyline data-name="Right" fill="none" id="Right-2" points="7.6 7 2.5 12 7.6 17" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+
+<line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21.5" x2="4.8" y1="12" y2="12"/>
+
+</g>
+
+</g>
+
+</g>
+
+</svg>
+                    </Button>
                 </div>
             </div>
 
@@ -85,7 +132,31 @@ const ProductRange = () => {
                            شوینده های صنعتی
                         </div>
                     </div>
-                   <Button variant='blue' size='full'>درخواست سفارش</Button>
+                   <Button variant='blue' size='full'>درخواست سفارش
+
+                     <svg  className="mr-2 w-5 h-5 transition-all duration-300 group-hover:-translate-x-3 group-hover:opacity-0"
+   xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+
+<title/>
+
+<g id="Complete">
+
+<g id="arrow-left">
+
+<g>
+
+<polyline data-name="Right" fill="none" id="Right-2" points="7.6 7 2.5 12 7.6 17" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+
+<line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21.5" x2="4.8" y1="12" y2="12"/>
+
+</g>
+
+</g>
+
+</g>
+
+</svg>
+                   </Button>
                 </div>
             </div>
         </div>

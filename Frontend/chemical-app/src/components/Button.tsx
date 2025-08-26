@@ -9,7 +9,7 @@ type ButtonProps = {
 
 export default function Button({ children, variant = "blue",size = "" , onClick }: ButtonProps) {
   const baseClasses =
-    "flex items-center justify-center cursor-pointer text-center px-6 py-4  rounded-md font-medium transition-colors duration-200";
+    "flex items-center justify-center cursor-pointer text-center px-6 py-4 group rounded-md font-medium transition-colors duration-200";
 
   const variantClasses =
     variant === "blue"
