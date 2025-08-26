@@ -3,6 +3,8 @@ import Button from './Button'
 import acid from "./../assets/acid.jpg"
 import oil from "./../assets/oil.jpg"
 import cleaner from "./../assets/cleaner.jpg"
+import CardRange from './CardRange'
+import { productRange } from '../data/productRange'
 
 const ProductRange = () => {
   return (
@@ -10,155 +12,20 @@ const ProductRange = () => {
     <div className="container mx-auto px-6">
         <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-gray-900 mb-4">دامنه <span className='text-[var(--bg-third)]'>محصولات</span> ما</h3>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">انتخابی جامع از مواد شیمیایی صنعتی برای تمامی صنایع و کاربردها</p>
+            <p className=" text-gray-600 max-w-3xl mx-auto">انتخابی جامع از مواد شیمیایی صنعتی برای تمامی صنایع و کاربردها</p>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
-            <div id="product-acids" className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="h-48">
-                    <img className='h-full w-full object-cover' src={acid}/>
-                </div>
-                <div className="p-8">
-                    <h4 className="text-2xl font-bold text-gray-900 mb-4">اسید های صنعتی</h4>
-                    <p className="text-gray-600 mb-6">اسیدهای سولفوریک، هیدروکلریک، نیتریک و فسفریک با خلوص بالا برای تولید و فرآوری</p>
-                    <div className="space-y-2 mb-6">
-                        <div className="flex items-center text-sm text-gray-600">
-                            <i className="text-green-500 ml-2" data-fa-i2svg=""><svg className="svg-inline--fa fa-check" width="16" height="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg></i>
-                           اسید سولفوریک (H₂SO₄)
-                        </div>
-                        <div className="flex items-center text-sm text-gray-600">
-                            <i className="text-green-500 ml-2" data-fa-i2svg=""><svg className="svg-inline--fa fa-check" width="16" height="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg></i>
-                            هیدروکلریک اسید (HCl)
-                        </div>
-                        <div className="flex items-center text-sm text-gray-600">
-                            <i className="text-green-500 ml-2" data-fa-i2svg=""><svg className="svg-inline--fa fa-check" width="16" height="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg></i>
-                            نیتریک اسید (HNO₃)
-                        </div>
-                    </div>
-                    <Button variant='blue' size='full'>درخواست سفارش
-
-                         <svg  className="mr-2 w-5 h-5 transition-all duration-300 group-hover:-translate-x-3 group-hover:opacity-0"
-   xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
-
-<title/>
-
-<g id="Complete">
-
-<g id="arrow-left">
-
-<g>
-
-<polyline data-name="Right" fill="none" id="Right-2" points="7.6 7 2.5 12 7.6 17" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-
-<line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21.5" x2="4.8" y1="12" y2="12"/>
-
-</g>
-
-</g>
-
-</g>
-
-</svg>
-                    </Button>
-                </div>
-            </div>
-
-            <div id="product-solvents" className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-               <div className="h-48">
-                    <img className='h-full w-full object-cover' src={oil}/>
-                </div>
-                <div className="p-8">
-                    <h4 className="text-2xl font-bold text-gray-900 mb-4">حلال ها &amp; روغن ها</h4>
-                    <p className="text-gray-600 mb-6">روغن کرچک ممتاز، پارافین‌ها و حلال‌های صنعتی برای کاربردهای مختلف</p>
-                    <div className="space-y-2 mb-6">
-                        <div className="flex items-center text-sm text-gray-600">
-                            <i className="text-green-500 ml-2" data-fa-i2svg=""><svg className="svg-inline--fa fa-check" width="16" height="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg></i>
-                           روغن کرچک سولفونه
-                        </div>
-                        <div className="flex items-center text-sm text-gray-600">
-                            <i className="text-green-500 ml-2" data-fa-i2svg=""><svg className="svg-inline--fa fa-check" width="16" height="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg></i>
-                            پارافین‌ مایع و جامد
-                        </div>
-                        <div className="flex items-center text-sm text-gray-600">
-                            <i className="text-green-500 ml-2" data-fa-i2svg=""><svg className="svg-inline--fa fa-check" width="16" height="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg></i>
-                            حلال های صنعتی
-                        </div>
-                    </div>
-                    <Button variant='blue' size='full'>درخواست سفارش
-                          <svg  className="mr-2 w-5 h-5 transition-all duration-300 group-hover:-translate-x-3 group-hover:opacity-0"
-   xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
-
-<title/>
-
-<g id="Complete">
-
-<g id="arrow-left">
-
-<g>
-
-<polyline data-name="Right" fill="none" id="Right-2" points="7.6 7 2.5 12 7.6 17" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-
-<line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21.5" x2="4.8" y1="12" y2="12"/>
-
-</g>
-
-</g>
-
-</g>
-
-</svg>
-                    </Button>
-                </div>
-            </div>
-
-            <div id="product-specialty" className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-               <div className="h-48">
-                    <img className='h-full w-full object-cover' src={cleaner}/>
-                </div>
-                <div className="p-8">
-                    <h4 className="text-2xl font-bold text-gray-900 mb-4">مواد شیمیایی تخصصی</h4>
-                    <p className="text-gray-600 mb-6">مواد و ترکیبات ویژه ضد خوردگی و ضد عفونی و شوینده های صنعتی</p>
-                    <div className="space-y-2 mb-6">
-                        <div className="flex items-center text-sm text-gray-600">
-                            <i className="text-green-500 ml-2" data-fa-i2svg=""><svg className="svg-inline--fa fa-check"  width="16" height="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg></i>
-                            مورفولین
-                        </div>
-                        <div className="flex items-center text-sm text-gray-600">
-                            <i className="text-green-500 ml-2" data-fa-i2svg=""><svg className="svg-inline--fa fa-check"  width="16" height="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg></i>
-                            فرمالین
-                        </div>
-                        <div className="flex items-center text-sm text-gray-600">
-                            <i className="text-green-500 ml-2" data-fa-i2svg=""><svg className="svg-inline--fa fa-check"  width="16" height="16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg></i>
-                           شوینده های صنعتی
-                        </div>
-                    </div>
-                   <Button variant='blue' size='full'>درخواست سفارش
-
-                     <svg  className="mr-2 w-5 h-5 transition-all duration-300 group-hover:-translate-x-3 group-hover:opacity-0"
-   xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
-
-<title/>
-
-<g id="Complete">
-
-<g id="arrow-left">
-
-<g>
-
-<polyline data-name="Right" fill="none" id="Right-2" points="7.6 7 2.5 12 7.6 17" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-
-<line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21.5" x2="4.8" y1="12" y2="12"/>
-
-</g>
-
-</g>
-
-</g>
-
-</svg>
-                   </Button>
-                </div>
-            </div>
+             {productRange.map((item, index) => (
+        <CardRange
+          key={index}
+          image={item.image}
+          title={item.title}
+          description={item.description}
+          products={item.products}
+        />
+      ))}
+           
         </div>
 
         <div className="bg-white rounded-xl shadow-lg p-8">
