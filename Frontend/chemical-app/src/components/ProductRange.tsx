@@ -1,8 +1,5 @@
-import React from 'react'
+
 import Button from './Button'
-import acid from "./../assets/acid.jpg"
-import oil from "./../assets/oil.jpg"
-import cleaner from "./../assets/cleaner.jpg"
 import CardRange from './CardRange'
 import { productRange } from '../data/productRange'
 

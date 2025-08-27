@@ -1,3 +1,4 @@
+import Industries from "../components/Industries"
 import Introduce from "../components/Introduce"
 import Nav from "../components/Nav"
 import ProductRange from "../components/ProductRange"
@@ -13,6 +14,7 @@ const Home = () => {
     <Introduce/>
     <WhyUs/>
     <ProductRange/>
+    <Industries/>
     </>
    
   )
