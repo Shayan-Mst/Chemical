@@ -1,3 +1,4 @@
+import AboutUs from "../components/AboutUs"
 import Industries from "../components/Industries"
 import Introduce from "../components/Introduce"
 import Nav from "../components/Nav"
@@ -17,6 +18,7 @@ const Home = () => {
     <ProductRange/>
     <Industries/>
     <RequestQuote/>
+    <AboutUs/>
     </>
    
   )
