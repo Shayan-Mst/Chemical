@@ -14,3 +14,12 @@ export interface Industries {
   color : string;
   border :string
 }
+
+
+export interface Request {
+  name: string ;
+  email: string;
+  phone : string;
+  industry :string;
+  qoute :string
+}
