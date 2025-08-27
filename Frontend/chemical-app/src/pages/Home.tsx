@@ -1,4 +1,5 @@
 import AboutUs from "../components/AboutUs"
+import CallUs from "../components/CallUs"
 import Industries from "../components/Industries"
 import Introduce from "../components/Introduce"
 import Nav from "../components/Nav"
@@ -19,6 +20,7 @@ const Home = () => {
     <Industries/>
     <RequestQuote/>
     <AboutUs/>
+    <CallUs/>
     </>
    
   )
