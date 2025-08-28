@@ -10,11 +10,11 @@ const TopBar = () => {
           
           واحد فروش :‌
            
-          <span>+1 (555) 123-4567</span>
+          <span>+98 912 34 54 003</span>
         </div>
         <div className="flex items-center gap-1">
          ایمیل : 
-          <span>info@mycompany.com</span>
+          <span>info@tandischemie.com</span>
         </div>
       </div>
 
