@@ -7,7 +7,8 @@ import Button from "./Button"
 const Nav = () => {
     
   return (
-     <nav className="text-[var(--text-secondary)] w-full   flex items-center justify-between">
+     <nav className="text-[var(--text-secondary)] w-full px-8 lg:px-16 xl:px-24 py-4
+  flex items-center justify-between">
       {/* Logo */}
      
      <div className="flex items-center gap-x-4">
@@ -25,7 +26,7 @@ const Nav = () => {
       {/* Links */}
      
        
-      <ul className="hidden md:flex items-center space-x-10 text-[var(--text-secondary)] ">
+      <ul className="hidden lg:flex items-center space-x-10 text-[var(--text-secondary)] ">
          
         <li><Link to="/" className="font-semibold  hover:text-[var(--bg-secondary)] transition-colors duration-200">محصولات</Link></li>
         <li><Link to="/" className="font-semibold  hover:text-[var(--bg-secondary)]  transition-colors duration-200">صنایع</Link></li>
