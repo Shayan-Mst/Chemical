@@ -16,8 +16,8 @@ const CallUs = () => {
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-4">شماره تماس</h4>
                 
-                <p dir='ltr' className="text-2xl font-bold text-black">+98 21 xxxx xxxx</p>
-                <p className="text-sm text-gray-500">شنبه تا پنجشنبه ۸ تا ۵</p>
+                <p dir='ltr' className="text-2xl font-bold text-black">+98 912 34 54 003</p>
+                <p className="text-sm text-gray-500">شنبه تا پنجشنبه ۸ تا ۱۷</p>
             </div>
             
             <div id="contact-email" className="text-center p-8 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors">

@@ -3,9 +3,9 @@ import Button from './Button'
 
 const Introduce = () => {
   return (
-   <section id="hero" className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 h-[600px] relative overflow-hidden">
-    <div className="absolute inset-0 bg-black/20"></div>
-    <div className="container mx-auto px-6 h-full flex items-center relative ">
+   <section id="hero" className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 h-[650px] relative overflow-hidden">
+    <div className="absolute inset-1 bg-black/20"></div>
+    <div className="container mx-auto px-6 h-full flex my-16 relative ">
         <div className="grid lg:grid-cols-2 gap-12  w-full">
             <div className="text-white">
                 <h2 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -28,7 +28,7 @@ const Introduce = () => {
                    </Button>
                 </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="lg:block">
                 <img className="w-full h-96 rounded-2xl object-cover shadow-2xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/517c791656-4619c80d0dfec879d4a2.png" alt="modern industrial chemical facility with storage tanks and laboratory equipment, professional photography"/>
             </div>
         </div>
