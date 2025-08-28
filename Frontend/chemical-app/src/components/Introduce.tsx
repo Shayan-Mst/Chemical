@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Introduce = () => {
   return (
-   <section id="hero" className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 h-[650px] relative overflow-hidden">
+   <section id="hero" className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 h-[900x] lg:h-[650px] relative overflow-hidden">
     <div className="absolute inset-1 bg-black/20"></div>
     <div className="container mx-auto px-6 h-full flex my-16 relative ">
         <div className="grid lg:grid-cols-2 gap-12  w-full">
