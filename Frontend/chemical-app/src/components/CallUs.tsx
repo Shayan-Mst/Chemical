@@ -11,7 +11,7 @@ const CallUs = () => {
         
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
             <div id="contact-phone" className="text-center p-8 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors">
-                <div className="w-16 h-16 bg-[var(--bg-secondary)] rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
                     <i className="text-white text-2xl" data-fa-i2svg=""><svg className="w-5 h-5 svg-inline--fa fa-phone" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path></svg></i>
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-4">شماره تماس</h4>
