@@ -28,7 +28,7 @@ const Nav = () => {
        
       <ul className="hidden lg:flex items-center space-x-10 text-text-secondary ">
          
-        <li><Link to="/" className="font-semibold  hover:text-bg-secondarytransition-colors duration-200">محصولات</Link></li>
+        <li><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">محصولات</Link></li>
         <li><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">صنایع</Link></li>
         <li><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">کیفیت</Link></li>
         <li><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">درباره ما</Link></li>

@@ -8,7 +8,7 @@ const ProductRange = () => {
    <section id="products" className="py-20 bg-gray-100">
     <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold text-gray-900 mb-4">دامنه <span className='text-[var(--bg-third)]'>محصولات</span> ما</h3>
+            <h3 className="text-4xl font-bold text-gray-900 mb-4">دامنه <span className='text-bg-third'>محصولات</span> ما</h3>
             <p className=" text-gray-600 max-w-3xl mx-auto">انتخابی جامع از مواد شیمیایی صنعتی برای تمامی صنایع و کاربردها</p>
         </div>
         
