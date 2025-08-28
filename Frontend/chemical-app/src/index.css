@@ -1,18 +1,12 @@
 @import "tailwindcss";
-:root {
+:root,html {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  --page-bg: #ffffff;
-  --bg-primary: #111827;
-  --bg-secondary: rgb(30 , 64, 175);
-  --bg-third : rgb(245 ,158 ,11);
-  --bg-svg : #cccfd4;
-  --text-primary: #ffffff;
-  --text-secondary: #111827;
+
   
   background-color: var(--page-bg);
   font-synthesis: none;
@@ -21,7 +15,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@theme {
 
+  --color-page-bg: #ffffff;
+  --color-bg-primary: #111827;
+  --color-bg-secondary: rgb(30 , 64, 175);
+  --color-bg-third : rgb(245 ,158 ,11);
+  --color-bg-svg : #cccfd4;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #111827;
+  
+
+}
 
 body {
   

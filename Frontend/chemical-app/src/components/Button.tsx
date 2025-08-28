@@ -13,10 +13,10 @@ export default function Button({ children, variant = "blue",size = "" , onClick 
 
   const variantClasses =
     variant === "blue"
-      ? "bg-[var(--bg-secondary)] text-white hover:bg-blue-700"
+      ? "bg-bg-secondary text-white hover:bg-blue-700"
       : variant === "orange"
-      ? "bg-[var(--bg-third)] text-white hover:bg-orange-500"
-      : "bg-[var(--bg-secondary)] text-white border-2 border-white hover:bg-white hover:text-[var(--bg-secondary)]"; 
+      ? "bg-bg-third text-white hover:bg-orange-500"
+      : "bg-bg-secondary text-white border-2 border-white hover:bg-white hover:text-bg-secondary"; 
 
       const sizeClass = size == "full"?"w-full":""
   return (
