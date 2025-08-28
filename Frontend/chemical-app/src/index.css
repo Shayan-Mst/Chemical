@@ -35,19 +35,3 @@ body {
   
 }
 
-
-nav1{
-
-  padding: 1rem 6rem;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}

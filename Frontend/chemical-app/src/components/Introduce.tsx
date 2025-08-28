@@ -10,7 +10,7 @@ const Introduce = () => {
             <div className="text-white">
                 <h2 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
                     مواد
-                    <span className="text-[var(--bg-third)]"> شیمیایی </span>
+                    <span className="text-bg-third"> شیمیایی </span>
                     صنعتی برای کسب و کار شما
                 </h2>
                 <p className="text-xl mb-8 text-blue-100 leading-relaxed">
