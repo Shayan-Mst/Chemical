@@ -19,7 +19,7 @@ const WhyUs = () => {
                 <div className="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-6">
                     <i className="text-white text-2xl" data-fa-i2svg=""><svg className="svg-inline--fa fa-tag" width="22" height="22" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></i>
                 </div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-4">قیمت‌های رقابتی</h4>
+                <h4 className="text-xl font-semibold text-gray-900 mb-4">قیمت‌های مناسب</h4>
                 <p className="text-gray-600">ارائه بهترین قیمت‌های بازار با تخفیف‌های شفاف برای خرید عمده و شرایط پرداخت انعطاف‌پذیر.</p>
             </div>
             <div id="feature-convenience" className="text-center p-8 rounded-xl bg-gray-50 hover:bg-blue-50 transition-colors">
