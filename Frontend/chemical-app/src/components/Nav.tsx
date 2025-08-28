@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link , useLocation } from "react-router-dom"
 import Button from "./Button"
-import { useState } from "react";
+import { useUI } from "../context/context";
 
 
 
 
 const Nav = () => {
-  const [isOpen, setIsOpen] = useState(false);
-    
+  const { sidebarOpen, toggleSidebar } = useUI()
+     const location = useLocation();
   return (
      <nav className="text-text-secondary bg-page-bg w-full px-8 lg:px-16 xl:px-24 py-4
   flex items-center justify-between">
@@ -30,11 +30,21 @@ const Nav = () => {
        
       <ul className="hidden lg:flex items-center space-x-10 text-text-secondary ">
          
-        <li><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">محصولات</Link></li>
-        <li><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">صنایع</Link></li>
-        <li><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">کیفیت</Link></li>
-        <li><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">درباره ما</Link></li>
-         <li><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">تماس با ما</Link></li>
+        <li  className={`pb-2 ${
+          location.pathname === "/" ? "border-b-3 border-b-blue-900" : ""
+        }`}><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">صفحه نخست</Link></li>
+        <li  className={`pb-2 ${
+          location.pathname === "/products" ? "border-b-3 border-b-blue-900" : ""
+        }`}><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">محصولات</Link></li>
+        <li  className={`pb-2 ${
+          location.pathname === "/industries" ? "border-b-3 border-b-blue-900" : ""
+        }`}><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">صنایع</Link></li>
+        <li  className={`pb-2 ${
+          location.pathname === "/about" ? "border-b-3 border-b-blue-900" : ""
+        }`}><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">درباره ما</Link></li>
+         <li  className={`pb-2 ${
+          location.pathname === "/contact" ? "border-b-3 border-b-blue-900" : ""
+        }`}><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">تماس با ما</Link></li>
       </ul>
 
 
@@ -56,8 +66,8 @@ const Nav = () => {
       </div> 
 
      <button 
-      onClick={() => setIsOpen(!isOpen)} 
-      className="lg:hidden flex items-center cursor-pointer justify-center w-8 h-8 focus:outline-none"
+      onClick={toggleSidebar} 
+      className="lg:hidden flex items-center cursor-pointer justify-center w-8 h-8 z-20 focus:outline-none"
     >
       <div 
         className="relative flex items-center justify-center w-full h-full"
@@ -67,7 +77,7 @@ const Nav = () => {
           className={`
             w-6 h-1 bg-bg-primary
             absolute transform transition-all duration-300 ease-in-out
-            ${isOpen ? 'rotate-45' : '-translate-y-2'}
+            ${sidebarOpen ? 'rotate-45' : '-translate-y-2'}
           `}
         ></div>
         
@@ -76,7 +86,7 @@ const Nav = () => {
           className={`
             w-6 h-1 bg-bg-primary
             transform transition-all duration-300 ease-in-out
-            ${isOpen ? 'opacity-0' : 'opacity-100'}
+            ${sidebarOpen ? 'opacity-0' : 'opacity-100'}
           `}
         ></div>
         
@@ -85,7 +95,7 @@ const Nav = () => {
           className={`
             w-6 h-1 bg-bg-primary
             absolute transform transition-all duration-300 ease-in-out
-            ${isOpen ? '-rotate-45' : 'translate-y-2'}
+            ${sidebarOpen ? '-rotate-45' : 'translate-y-2'}
           `}
         ></div>
       </div>

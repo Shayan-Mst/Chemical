@@ -1,11 +1,36 @@
 
+import { Link } from 'react-router-dom'
+import { useUI } from '../context/context'
 
-const TopBar = () => {
+const SideBar = () => {
+
+   const { sidebarOpen} = useUI()
   return (
-  <div className="bg-bg-primary text-white   px-6 lg:px-24 py-2 hidden lg:flex justify-between items-center">
-      
-      {/* Left side: phone + email */}
-      <div className="flex flex-col sm:flex-row items-center gap-2 lg:gap-6 text-xs sm:text-sm">
+     <div className="flex">
+      {/* Mobile topbar */}
+     
+
+      {/* Sidebar */}
+      <div
+        className={`fixed lg:hidden lg:static top-0 left-0 h-full w-64 bg-page-bg text-text-secondary p-6 transition-transform duration-300 z-10
+        ${sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
+      >
+        <div className="w-12 h-12 bg-bg-secondary rounded-lg flex items-center justify-center">
+                    <svg className="svg-inline--fa fa-flask" width="20" height="20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="flask" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="#fff" d="M288 0H160 128C110.3 0 96 14.3 96 32s14.3 32 32 32V196.8c0 11.8-3.3 23.5-9.5 33.5L10.3 406.2C3.6 417.2 0 429.7 0 442.6C0 480.9 31.1 512 69.4 512H378.6c38.3 0 69.4-31.1 69.4-69.4c0-12.8-3.6-25.4-10.3-36.4L329.5 230.4c-6.2-10.1-9.5-21.7-9.5-33.5V64c17.7 0 32-14.3 32-32s-14.3-32-32-32H288zM192 196.8V64h64V196.8c0 23.7 6.6 46.9 19 67.1L309.5 320h-171L173 263.9c12.4-20.2 19-43.4 19-67.1z"></path></svg>
+                </div>
+        <ul className=" flex flex-col gap-6 space-10 text-text-secondary my-6">
+         
+        <li className='hover:bg-bg-secondary px-2 py-1 transition-colors ease-in-out duration-200 hover:text-white rounded-md'><Link to="/" className="font-semibold">صفحه نخست</Link></li>
+        <li className='hover:bg-bg-secondary px-2 py-1 transition-colors ease-in-out duration-200 hover:text-white rounded-md'><Link to="/" className="font-semibold">محصولات</Link></li>
+        <li className='hover:bg-bg-secondary px-2 py-1 transition-colors ease-in-out duration-200 hover:text-white rounded-md'><Link to="/" className="font-semibold">صنایع</Link></li>
+        <li className='hover:bg-bg-secondary px-2 py-1 transition-colors ease-in-out duration-200 hover:text-white rounded-md'><Link to="/" className="font-semibold">درباره ما</Link></li>
+        <li className='hover:bg-bg-secondary px-2 py-1 transition-colors ease-in-out duration-200 hover:text-white rounded-md'><Link to="/" className="font-semibold">تماس با ما</Link></li>
+      </ul>
+
+
+
+         {/* Left side: phone + email */}
+      <div className="flex flex-col px-2  gap-6  text-sm">
         <div className="flex items-center gap-1">
           
            تماس :‌
@@ -13,13 +38,11 @@ const TopBar = () => {
           <span dir="ltr">+98 912 34 54 003</span>
         </div>
         <div className="flex items-center gap-1">
-         ایمیل: 
+         ایمیل : 
           <span>info@tandischemie.com</span>
         </div>
-      </div>
 
-      {/* Right side: social icons */}
-      <div className="flex items-center gap-4 md:pl-4">
+         <div className="flex items-center gap-4">
 
          <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
           <span className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-bg-secondary transition-colors cursor-pointer">
@@ -69,9 +92,17 @@ const TopBar = () => {
                     </span>
         </a>
       </div>
+      </div>
+
+     
+     
+      
+      </div>
+
+      
       
     </div>
   )
 }
 
-export default TopBar
+export default SideBar
