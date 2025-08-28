@@ -34,7 +34,7 @@ const AboutUs = () => {
             
             <div className="space-y-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                    <h4 className="text-2xl font-bold mb-6">دستاورد های ما</h4>
+                    <h4 className="text-2xl font-bold mb-6 text-center">دستاورد های ما</h4>
                     <div className="grid sm:grid-cols-2 gap-6">
                         <div className="text-center">
                             <div className="text-4xl font-bold text-[var(--bg-third)] mb-2">500+</div>
@@ -49,7 +49,7 @@ const AboutUs = () => {
                 </div>
                 
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                    <h4 className="text-xl font-bold mb-4">تضمین استاندارد کیفیت</h4>
+                    <h4 className="text-xl font-bold mb-4 text-center">تضمین استاندارد کیفیت</h4>
                     <div className="grid grid-cols-3 gap-4">
                         <div className="text-center">
                             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-2">
