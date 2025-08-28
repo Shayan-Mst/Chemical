@@ -8,18 +8,18 @@ const TopBar = () => {
       <div className="flex flex-col sm:flex-row items-center gap-2 lg:gap-6 text-xs sm:text-sm">
         <div className="flex items-center gap-1">
           
-          واحد فروش :‌
+           تماس :‌
            
-          <span>+98 912 34 54 003</span>
+          <span dir="ltr">+98 912 34 54 003</span>
         </div>
         <div className="flex items-center gap-1">
-         ایمیل : 
+         ایمیل: 
           <span>info@tandischemie.com</span>
         </div>
       </div>
 
       {/* Right side: social icons */}
-      <div className="flex items-center gap-4 pl-4">
+      <div className="flex items-center gap-4 md:pl-4">
 
          <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
           <span className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-bg-secondary transition-colors cursor-pointer">
