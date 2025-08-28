@@ -12,8 +12,7 @@ import WhyUs from "../components/WhyUs"
 const Home = () => {
   return (
     <>
-    <TopBar/>
-    <Nav/>
+   
     <Introduce/>
     <WhyUs/>
     <ProductRange/>
