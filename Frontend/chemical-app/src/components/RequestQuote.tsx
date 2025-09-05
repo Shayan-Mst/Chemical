@@ -17,7 +17,7 @@ const RequestQuote = () => {
     }
 
   return (
-   <section id="quote-system" className="py-20 bg-gray-100">
+   <section id="quote" className="py-20 bg-gray-100">
     <div className="container mx-auto px-6">
         <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-gray-900 mb-4">همین حالا <span className="text-bg-third">درخواست</span> بدهید!</h3>
