@@ -23,3 +23,9 @@ export interface Request {
   industry :string;
   qoute :string
 }
+
+
+export interface NavItem  {
+  label: string
+  link: string
+}

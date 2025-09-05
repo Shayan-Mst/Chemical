@@ -1,6 +1,7 @@
 import { Link , useLocation } from "react-router-dom"
 import Button from "./Button"
 import { useUI } from "../context/context";
+import { navbarItems } from "../data/navItem";
 
 
 
@@ -30,23 +31,13 @@ const Nav = () => {
      
        
       <ul className="hidden md:flex items-center space-x-10 text-text-secondary ">
+
+        {navbarItems.map((item)=>( <li  className={`pb-2 ${
+          location.pathname === item.link ? "border-b-3 border-b-blue-900" : ""
+        }`}><Link to={item.link} className="font-semibold  hover:text-bg-secondary transition-colors duration-200">{item.label}</Link></li>
+        ))}
          
-        <li  className={`pb-2 ${
-          location.pathname === "/" ? "border-b-3 border-b-blue-900" : ""
-        }`}><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">صفحه نخست</Link></li>
-        <li  className={`pb-2 ${
-          location.pathname === "/products" ? "border-b-3 border-b-blue-900" : ""
-        }`}><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">محصولات</Link></li>
-        <li  className={`pb-2 ${
-          location.pathname === "/industries" ? "border-b-3 border-b-blue-900" : ""
-        }`}><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">صنایع</Link></li>
-        <li  className={`pb-2 ${
-          location.pathname === "/about" ? "border-b-3 border-b-blue-900" : ""
-        }`}><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">درباره ما</Link></li>
-         <li  className={`pb-2 ${
-          location.pathname === "/contact" ? "border-b-3 border-b-blue-900" : ""
-        }`}><Link to="/" className="font-semibold  hover:text-bg-secondary transition-colors duration-200">تماس با ما</Link></li>
-      </ul>
+            </ul>
 
 
       {/* Request Button */}
