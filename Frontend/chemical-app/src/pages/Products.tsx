@@ -1,8 +1,13 @@
-import React from 'react'
+
+import ProductHeader from '../components/productHeader'
+import SearchFilter from '../components/SearchFilter'
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <>
+    {/* <ProductHeader/> */}
+    <SearchFilter/>
+    </>
   )
 }
 
