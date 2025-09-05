@@ -9,7 +9,7 @@ const CardIndustries : FC<Industries> = ({name , svg , linkPage , color , border
   <span className={`absolute top-0 right-0 w-0 h-0 border-2 ${border} rounded-xl transition-all duration-500 ease-out group-hover:w-full group-hover:h-full`}></span>
 
   {/* card content */}
-  <div className="relative z-10">
+  <div className="relative">
     <div className={`${color}  w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4`}>
       {svg}
     </div>
