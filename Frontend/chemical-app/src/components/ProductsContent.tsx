@@ -153,7 +153,7 @@ const ProductsContent = () => {
                 <div className="flex items-center justify-between mb-8">
                     <div>
                         <h2 className="text-2xl font-bold text-gray-900">محصولات شیمیایی</h2>
-                        <p className="text-gray-600 mt-1">نمایش ۱-۷ محصول از ۳۷ محصول</p>
+                        <p className="text-gray-600 mt-1">نمایش ۱-۶ محصول از ۳۷ محصول</p>
                     </div>
                     <div className="flex items-center space-x-4">
                         <div className="flex items-center space-x-2">
