@@ -29,3 +29,12 @@ export interface NavItem  {
   label: string
   link: string
 }
+
+export interface Product {
+  name: string
+  grade: string
+  description: string
+  minOrder: string
+  available : string,
+  features: string[]
+}
