@@ -124,8 +124,8 @@ const SearchFilter = () => {
          
           </span>
 
-          <button className="text-primary text-sm hover:underline">
-            Clear all
+          <button className="text-bg-secondary text-sm hover:underline">
+            پاکسازی فیلتر
           </button>
         </div>
       </div>

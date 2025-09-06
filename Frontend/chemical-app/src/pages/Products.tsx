@@ -1,5 +1,6 @@
 
-import ProductHeader from '../components/productHeader'
+// import ProductHeader from '../components/productHeader'
+import ProductsContent from '../components/ProductsContent'
 import SearchFilter from '../components/SearchFilter'
 
 const Products = () => {
@@ -7,6 +8,7 @@ const Products = () => {
     <>
     {/* <ProductHeader/> */}
     <SearchFilter/>
+    <ProductsContent/>
     </>
   )
 }
