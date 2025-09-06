@@ -1,4 +1,4 @@
-import Button from "./Button"
+import { products } from "../data/Products"
 import ProductCard from "./ProductCard"
 
 const ProductsContent = () => {
@@ -171,8 +171,11 @@ const ProductsContent = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                     
                     {/* <!-- Product Cards --> */}
-                    
-                    <ProductCard/>
+                    {products.map((item,id)=>(
+                   <ProductCard name={item.name} description={item.description} grade={item.grade}
+                   available={item.available} minOrder={item.minOrder} features={item.features} key={id}/>
+                    ))}
+                   
                     
                  
                     

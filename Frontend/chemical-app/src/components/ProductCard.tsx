@@ -1,7 +1,9 @@
-import React from 'react'
-import Button from './Button'
 
-const ProductCard = () => {
+import type { FC } from 'react'
+import Button from './Button'
+import type { Product } from '../types/type'
+
+const ProductCard : FC<Product> = ({name,grade,description,minOrder,available,features}) => {
     
   return (
 
@@ -10,7 +12,7 @@ const ProductCard = () => {
                         <div className="relative">
                             <img className="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5dbdad0b0e-3ce7731719fe26b1b4ed.png" alt="industrial chemical bottle with sulfuric acid label in laboratory setting"/>
                             <div className="absolute top-4 left-4">
-                                <span className="bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">In Stock</span>
+                                <span className={`${available === "موجودی کم" ? "bg-yellow-600" : available == "موجود" ? "bg-green-600" : "bg-red-600"} text-white px-3 py-1 rounded-full text-sm font-medium`}>{available}</span>
                             </div>
                             
                           
@@ -18,25 +20,28 @@ const ProductCard = () => {
                         <div className="p-6">
                             <div className="flex items-start justify-between mb-2">
                                 <h3 className="text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors">
-                                    Sulfuric Acid (H₂SO₄)
+                                    {name}
                                 </h3>
                                 
                             </div>
-                            <p className="text-gray-600 text-sm mb-3">CAS: 7664-93-9 | Pharmaceutical Grade</p>
-                            <p className="text-gray-700 text-sm mb-4">High purity sulfuric acid for industrial applications, water treatment, and chemical synthesis.</p>
+                            <p className="text-gray-600 text-sm mb-3">{grade}</p>
+                            <p className="text-gray-700 text-sm mb-4">{description}</p>
                             <div className="flex items-center justify-between mb-4">
                                 <div>
                                     <span className="text-2xl font-bold text-gray-900">185,000</span>
                                     <span className="text-gray-600 text-sm">IRR/kg</span>
                                 </div>
                                 <div className="text-right">
-                                    <p className="text-xs text-gray-500">Min. Order: 25kg</p>
-                                    <p className="text-xs text-green-600 font-medium">Bulk discount available</p>
+                                    <p className="text-xs text-gray-500"> حداقل سفارش : {minOrder}</p>
+                                    <p className="text-xs text-green-600 font-medium">تخفیف در صورت خرید عمده</p>
                                 </div>
                             </div>
                             <div className="flex items-center space-x-2 mb-4">
-                                <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">98% Purity</span>
-                                <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">ISO Certified</span>
+                                {features.map((item)=>(
+                          <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">{item}</span>
+                                ))}
+                              
+                                {/* <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">ISO Certified</span> */}
                             </div>
                             <div className="flex space-x-2">
                                 <Button variant="blue" size="full">مشاهده محصول</Button>
