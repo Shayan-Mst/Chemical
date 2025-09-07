@@ -40,7 +40,8 @@ const ProductCard : FC<Product> = ({name,grade,description,minOrder,available,fe
                                 {features.map((item)=>(
                           item.includes("گواهی")? <span className="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">{item}</span>
                           :item.includes("تخفیف")?<span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">{item}</span>:
-                          item.includes("خلوص")? <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">{item}</span>:<span className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">{item}</span>
+                          item.includes("خلوص")? <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">{item}</span>:
+                          <span className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">{item}</span>
                                 ))}
                               
                                 {/* <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">ISO Certified</span> */}
