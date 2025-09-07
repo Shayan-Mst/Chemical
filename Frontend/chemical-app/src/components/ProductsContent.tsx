@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { products } from "../data/Products"
 import ProductCard from "./ProductCard"
+import ProductCard1 from "./ProductCard1";
 
 const ProductsContent = () => {
 
@@ -177,7 +178,7 @@ const ProductsContent = () => {
                     
                     {/* <!-- Product Cards --> */}
                     {products.map((item,id)=>(
-                   <ProductCard name={item.name} description={item.description} grade={item.grade}
+                   <ProductCard image ={item.image} name={item.name} description={item.description} grade={item.grade}
                    available={item.available} minOrder={item.minOrder} features={item.features} key={id}/>
                     ))}
                    
@@ -188,11 +189,11 @@ const ProductsContent = () => {
       
                 </div> : 
                 
-                <div className="grid grid-cols-1 gap-8">
+                <div className="grid grid-cols-1  gap-8">
                     
                     {/* <!-- Product Cards --> */}
                     {products.map((item,id)=>(
-                   <ProductCard name={item.name} description={item.description} grade={item.grade}
+                   <ProductCard1 image={item.image} name={item.name} description={item.description} grade={item.grade}
                    available={item.available} minOrder={item.minOrder} features={item.features} key={id}/>
                     ))}
                    

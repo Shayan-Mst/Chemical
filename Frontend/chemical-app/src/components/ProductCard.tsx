@@ -3,14 +3,14 @@ import type { FC } from 'react'
 import Button from './Button'
 import type { Product } from '../types/type'
 
-const ProductCard : FC<Product> = ({name,grade,description,minOrder,available,features}) => {
+const ProductCard : FC<Product> = ({image,name,grade,description,minOrder,available,features}) => {
     
   return (
 
      
-                    <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
+                    <div className="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
                         <div className="relative">
-                            <img className="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5dbdad0b0e-3ce7731719fe26b1b4ed.png" alt="industrial chemical bottle with sulfuric acid label in laboratory setting"/>
+                            <img className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" src={image} alt="industrial chemical bottle with sulfuric acid label in laboratory setting"/>
                             <div className="absolute top-4 left-4">
                                 <span className={`${available === "موجودی کم" ? "bg-yellow-600" : available == "موجود" ? "bg-green-600" : "bg-red-600"} text-white px-3 py-1 rounded-full text-sm font-medium`}>{available}</span>
                             </div>
@@ -28,8 +28,8 @@ const ProductCard : FC<Product> = ({name,grade,description,minOrder,available,fe
                             <p className="text-gray-700 text-sm mb-4">{description}</p>
                             <div className="flex items-center justify-between mb-4">
                                 <div>
-                                    <span className="text-2xl font-bold text-gray-900">185,000</span>
-                                    <span className="text-gray-600 text-sm">IRR/kg</span>
+                                    <span className="text-sm font-bold text-text-secondary">برای قیمت تماس بگیرید.</span>
+                                   
                                 </div>
                                 <div className="text-right">
                                     <p className="text-xs text-gray-500"> حداقل سفارش : {minOrder}</p>

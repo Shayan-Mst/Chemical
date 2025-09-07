@@ -31,6 +31,7 @@ export interface NavItem  {
 }
 
 export interface Product {
+  image : string,
   name: string
   grade: string
   description: string
