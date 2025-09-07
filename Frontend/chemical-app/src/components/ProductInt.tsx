@@ -13,7 +13,7 @@ const ProductInt = () => {
   return (
     <section id="product-hero" className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 sm:px-12 md:px-23 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 sm:px-12 md:px-23 lg:px-0 lg:grid-cols-2 gap-12">
                 <div className="space-y-6">
                     <div className="bg-gray-100 rounded-xl p-8 h-96 flex items-center justify-center">
                         <img className="w-full h-full object-cover rounded-lg" src={images[selectImg]} alt="industrial castor oil bottles and cont"/>
