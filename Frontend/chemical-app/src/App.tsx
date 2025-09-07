@@ -6,6 +6,7 @@ import MainLayout from './layouts/MainLayout'
 import Products from './pages/Products'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
+import NotFound from './pages/NotFound'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path='about' element={<AboutUs/>}/>
       <Route path='contact' element = {<ContactUs/>}/>
       </Route>
+      <Route path='*' element={<NotFound/>}/>
      </Routes>
     </>
   )

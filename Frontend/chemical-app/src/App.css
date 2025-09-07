@@ -10,4 +10,12 @@
       transform: scaleX(1);
     }
 
+.not-found{
+
+  
+  background-image: url("/Notfound.jpg");
+  
+  
+}
+
     
