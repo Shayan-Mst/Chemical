@@ -48,7 +48,7 @@ const ProductCard : FC<Product> = ({image,name,grade,description,minOrder,availa
                                 {/* <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">ISO Certified</span> */}
                             </div>
                             <div className="flex space-x-2">
-                                <Link className='w-full' to="/products/1">
+                                <Link className='w-full' to="/products/روغن کرچک ۲">
                                 <Button variant="blue" size="full">مشاهده محصول</Button>
                                </Link>
                                 <button className="py-2 px-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">

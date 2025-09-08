@@ -14,6 +14,7 @@ export default function Breadcrumb() {
     services: "خدمات",
     about: "درباره ما",
     contact: "تماس با ما",
+    request : "درخواست سفارش"
   }
 
   return (
@@ -32,6 +33,7 @@ export default function Breadcrumb() {
             const routeTo = "/" + pathParts.slice(0, index + 1).join("/")
             const isLast = index === pathParts.length - 1
             const label = labels[part] || decodeURIComponent(part)
+            const pureLabel = label.replace(/[0-9۰-۹]/g, "")
 
             return (
               <div key={routeTo} className="flex items-center text-center space-x-2">
@@ -50,7 +52,7 @@ export default function Breadcrumb() {
                 </svg>
 
                 {isLast ? (
-                  <span className="text-bg-secondary font-bold ">{label}</span>
+                  <span className="text-bg-secondary font-bold ">{pureLabel}</span>
                 ) : (
                   <Link
                     to={routeTo}
