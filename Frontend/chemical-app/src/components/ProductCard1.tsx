@@ -2,6 +2,7 @@
 import type { FC } from 'react'
 import Button from './Button'
 import type { Product } from '../types/type'
+import { Link } from 'react-router-dom'
 
 const ProductCard1 : FC<Product> = ({image,name,grade,description,minOrder,available,features}) => {
     
@@ -77,9 +78,11 @@ const ProductCard1 : FC<Product> = ({image,name,grade,description,minOrder,avail
         </p>
       </div>
       <div className="flex space-x-2">
+        <Link className='w-full' to="/products/1">
         <Button variant="blue" size="full">
           مشاهده محصول
         </Button>
+        </Link>
         <button className="py-2 px-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
           <i className="text-gray-600" data-fa-i2svg="">
             <svg
