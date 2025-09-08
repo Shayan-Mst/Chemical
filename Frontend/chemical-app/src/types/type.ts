@@ -39,3 +39,9 @@ export interface Product {
   available : string,
   features: string[]
 }
+
+export interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  // phoneNumber?: string; // optional number to show
+}

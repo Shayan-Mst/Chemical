@@ -1,8 +1,11 @@
 import Button from "./Button"
 import type { Request } from "../types/type"
 import { useState } from "react"
+import Modal from "./Modal";
 
 const RequestQuote = () => {
+
+      const [isModalOpen, setIsModalOpen] = useState(false);
 
     const [req,setReq] = useState<Request>({
         name:"",
@@ -12,8 +15,9 @@ const RequestQuote = () => {
         qoute:""
     })
 
-    const submit = () => {
-
+    const submit = (e : any) => {
+        e.preventDefault()
+        setIsModalOpen(true)
     }
 
   return (
@@ -84,7 +88,7 @@ const RequestQuote = () => {
 
                   <div className="p-8 lg:p-12">
                     <h4 className="text-2xl font-bold text-gray-900 mb-6">درخواست سفارش</h4>
-                    <form id="quote-form" className="space-y-6">
+                    <form onSubmit={(e : any) =>submit(e)} id="quote-form" className="space-y-6">
                         <div className="grid sm:grid-cols-2 gap-4">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2"> نام شرکت یا شخص </label>
@@ -128,7 +132,7 @@ const RequestQuote = () => {
                         
                        
                         
-                        <Button onClick={submit} variant="blue" size="full">
+                        <Button  variant="blue" size="full">
                             ثبت درخواست
 
                               <i className="mr-2" data-fa-i2svg=""><svg className="w-4 h-4 svg-inline--fa fa-paper-plane " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paper-plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"></path></svg></i>
@@ -139,6 +143,7 @@ const RequestQuote = () => {
             </div>
         </div>
     </div>
+    <Modal isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
 </section>
   )
 }
