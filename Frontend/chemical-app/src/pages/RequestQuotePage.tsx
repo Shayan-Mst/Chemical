@@ -1,4 +1,4 @@
-import React from 'react'
+
 import RequestQuote from '../components/RequestQuote'
 
 const RequestQuotePage = () => {

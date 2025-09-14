@@ -1,4 +1,4 @@
-import React from 'react'
+
 import CallUs from '../components/CallUs'
 import GetInTouch from '../components/GetInTouch'
 
